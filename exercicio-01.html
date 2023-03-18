@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+<body>
+    <h1>Recibo</h1>
+    <div id="vendaprod"></div>
+    <script>
+        let numprod;
+        let prod;
+        let valor;
+
+        let resposta = prompt ("Vc deseja emitir Recibo? \n1 - SIM \n2 - Não");
+
+        while(resposta == "1") {
+            numprod = prompt("Digite a quantia do produto");
+            prod = prompt("Digite o nome do produto");
+            valor = prompt("Digite o valor do produto");
+            document.getElementById("vendaprod").innerHTML += "Quantidade: " + numprod + "</br>"
+            + "Produto: " + prod + "</br>"
+            + "Valor: " + valor + "</br>"
+            + "---------------------------------------------" + "</br>"
+            resposta = prompt ("Vc deseja cadastrar mais algum produto? \n1 - SIM \n2 - Não");
+        }
+
+</script>
+</body>
+</html>
